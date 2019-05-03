@@ -11,28 +11,52 @@
 
 <body>
 
-<!--    url(http://www.transparenttextures.com/patterns/sandpaper.png)-->
-    <nav class="w-full bg-grey-lighter shadow text-sm">
-        <div class="container mx-auto flex">
-            <ul class="list-reset flex justify-between w-1/2 text-center items-center">
-                <li class="flex-1 py-4 border-b-2 border-blue-dark font-bold"><a class="no-underline hover:no-underline text-blue-dark" href="#">Home</a></li>
-                <li class="flex-1 py-4"><a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">Who We Are</a></li>
-                <li class="flex-1 py-4"><a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">What We Do</a></li>
-                <li class="flex-1 py-4"><a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">Why We Do</a></li>
-                <li class="flex-1 py-4"><a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">Donate</a></li>
-            </ul>
+    <!--    url(http://www.transparenttextures.com/patterns/sandpaper.png)-->
+    <div class="min-h-screen flex flex-col justify-between">
+        <div id="upper">
+            <nav class="w-full bg-grey-lighter shadow text-sm">
+                <div class="container mx-auto flex">
+                    <ul class="list-reset flex justify-between w-1/2 text-center items-center">
+                        <li class="flex-1 py-4 border-b-2 border-blue-dark font-bold">
+                            <a class="no-underline hover:no-underline text-blue-dark" href="#">Home</a></li>
+                        <li class="flex-1 py-4">
+                            <a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">Who
+                                We Are</a></li>
+                        <li class="flex-1 py-4">
+                            <a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">What
+                                We Do</a></li>
+                        <li class="flex-1 py-4">
+                            <a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">Why
+                                We Do</a></li>
+                        <li class="flex-1 py-4">
+                            <a class="no-underline hover:no-underline text-grey-dark hover:text-blue-light" href="#">Donate</a>
+                        </li>
+                    </ul>
 
-            <div class="flex justify-end w-1/2 items-center">
-                <a class="ml-4" href="#">
-                    <img src="/assets/img/instagram.svg" class="h-8 w-8" alt="">
-                </a>
-                <a class="ml-4" href="#">
-                    <img src="/assets/img/facebook.svg" class="h-8 w-8" alt="">
-                </a>
-                <a class="ml-4" href="#">
-                    <img src="/assets/img/logo.png" class="h-8 w-8" alt="">
-                </a>
-            </div>
+                    <div class="flex justify-end w-1/2 items-center">
+                        <a class="ml-4" href="#">
+                            <img src="/assets/img/instagram.svg" class="h-8 w-8" alt="">
+                        </a>
+                        <a class="ml-4" href="#">
+                            <img src="/assets/img/facebook.svg" class="h-8 w-8" alt="">
+                        </a>
+                        <a class="ml-4" href="#">
+                            <img src="/assets/img/logo.png" class="h-8 w-8" alt="">
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
+        <div id="footer">
+            <footer class="w-full bg-blue-dark">
+                <div class="container mx-auto py-6 flex items-center">
+                    <div class="w-1/2 text-white text-bold">P.O. Box 171763 ❖ Kansas City, KS 66117</div>
+                    <div class="w-1/2 flex">
+                        <input class="inline-block shadow-md w-2/3 appearance-none outline-none rounded-sm py-2 pl-2" type="text" placeholder="Email Address">
+                        <button class="rounded shadow-md bg-grey-dark hover:bg-grey-darker ml-2 py-2 px-4 text-white text-bold">Submit</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
