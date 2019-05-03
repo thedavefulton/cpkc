@@ -7,9 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 
     <title>CPKC</title>
+    <style>
+        #hero {
+            background-image: url("/assets/img/hero.jpg");
+            background-size: cover;
+            overflow: hidden;
+            height: 0;
+            padding-top: calc(513 / 1200 * 100%);
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-image: url(http://www.transparenttextures.com/patterns/sandpaper.png);">
 
     <!--    url(http://www.transparenttextures.com/patterns/sandpaper.png)-->
     <div class="min-h-screen flex flex-col justify-between">
@@ -46,12 +55,17 @@
                     </div>
                 </div>
             </nav>
+            <main class="container mx-auto">
+                <div id="hero" class="text-center">
+                    <h1>Compassionate Partners KC</h1>
+                </div>
+            </main>
         </div>
         <div id="footer">
             <footer class="w-full bg-blue-dark">
                 <div class="container mx-auto py-6 flex items-center">
                     <div class="w-1/2 text-white text-bold">P.O. Box 171763 ❖ Kansas City, KS 66117</div>
-                    <div class="w-1/2 flex">
+                    <div class="w-1/2 flex justify-end">
                         <input class="inline-block shadow-md w-2/3 appearance-none outline-none rounded-sm py-2 pl-2" type="text" placeholder="Email Address">
                         <button class="rounded shadow-md bg-grey-dark hover:bg-grey-darker ml-2 py-2 px-4 text-white text-bold">Submit</button>
                     </div>
