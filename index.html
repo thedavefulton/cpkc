@@ -29,13 +29,50 @@
             width: 100%;
             position: absolute;
         }
+
+        .paint-outer {
+            position: relative;
+            overflow: hidden;
+            height: 0;
+            padding-top: calc(57 / 316 * 100%);
+            background-image: url("assets/img/brush-blue.png");
+            background-size: cover;
+        }
+
+        .paint-inner {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .serve-outer {
+            position: relative;
+            overflow: hidden;
+            height: 0;
+            padding-top: calc(3 / 4 * 100%);
+            background-size: cover;
+        }
+
+        .serve-outer__1 {
+            background-image: url("assets/img/celebrate-box.png");
+        }
+
+        .serve-outer__2 {
+            background-image: url("assets/img/summer-reading.png");
+        }
+
+        .serve-outer__3 {
+            background-image: url("assets/img/single-cupcake.png");
+        }
     </style>
 </head>
 
 <body style="background-image: url(http://www.transparenttextures.com/patterns/sandpaper.png); background-color: #ccc8c0">
 
     <!--    url(http://www.transparenttextures.com/patterns/sandpaper.png)-->
-    <div class="min-h-screen flex flex-col justify-between">
+    <div class="min-h-screen flex flex-col justify-between tracking-normal leading-normal">
         <div id="upper">
             <nav class="w-full bg-grey-lighter shadow text-sm">
                 <div class="container mx-auto flex">
@@ -77,20 +114,115 @@
                     </div>
                 </div>
 
+                <!-- Main Body -->
                 <div class="mx-4 -mt-10 relative">
                     <div>
+
+                        <!-- Cards -->
                         <div class="mb-8 py-16 px-24 rounded bg-white text-2xl shadow-md">
-                            <p>We strive to inspire hop into the hearts of our most valuable resource: our children.</p>
+                            <p>We strive to inspire hope into the hearts of our most valuable resource: our children.</p>
                         </div>
 
+                        <!-- Video -->
                         <div class="mb-8 rounded bg-white text-2xl shadow-md flex">
-                            <div class="w-1/3 py-4 px-4">"Every message in here is that you are loved and you're valued. It doesn't cost much.</div>
+                            <div class="w-1/3 py-4 px-4">"Every message in here is that you are loved and you're valued.
+                                It doesn't cost much.
+                            </div>
                             <div class="w-2/3 py-4 px-4">
                                 <div class="relative" id="video">
-                                    <iframe src="https://www.youtube.com/embed/NlDi1enLzbw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/NlDi1enLzbw"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Serve -->
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-1/2 mx-auto">
+                                <div class="paint-outer">
+                                    <div class="paint-inner">
+                                        <div class="flex justify-center items-center w-full h-full">
+                                            <h1 class="inline-block text-5xl text-white">How We Serve</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-8 flex justify-between items-stretch">
+                            <div class="w-1/3 mr-2">
+                                <div class="rounded w-full h-full overflow-hidden bg-white shadow-md">
+                                    <div class="serve-outer serve-outer__1"></div>
+                                    <div>
+                                        <!-- Paint/Title -->
+                                        <div class="paint-outer mt-2">
+                                            <div class="paint-inner">
+                                                <div class="flex justify-center items-center w-full h-full">
+                                                    <h3 class="text-3xl text-white">Celebration Boxes</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Content -->
+
+                                        <div class="p-4">
+                                            <p class="text-xl">We've shared the Celebration Box with over 500 children
+                                                in domestic violence shelters and transitional housing programs to
+                                                celebrate birthdays, holidays and special occasions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/3 mx-1">
+                                <div class="rounded w-full h-full overflow-hidden bg-white shadow-md">
+                                    <div class="serve-outer serve-outer__3"></div>
+                                    <div>
+                                        <!-- Paint/Title -->
+                                        <div class="paint-outer mt-2">
+                                            <div class="paint-inner">
+                                                <div class="flex justify-center items-center w-full h-full">
+                                                    <h3 class="text-3xl text-white">Celebration Cupcakes</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Content -->
+
+                                        <div class="p-4">
+                                            <p class="text-xl">We've provided over 740 cupcakes and cookies for
+                                                celebrations that allow youth to rise above their difficult
+                                                circumstances to enjoy being a kid for a day.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/3 ml-2">
+                                <div class="rounded w-full h-full overflow-hidden bg-white shadow-md">
+                                    <div class="serve-outer serve-outer__2"></div>
+                                    <div>
+                                        <!-- Paint/Title -->
+                                        <div class="paint-outer mt-2">
+                                            <div class="paint-inner">
+                                                <div class="flex justify-center items-center w-full h-full">
+                                                    <h3 class="text-3xl text-white">Summer Reading</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Content -->
+
+                                        <div class="p-4">
+                                            <p class="text-xl">We've given over 250 books to children in hopes of
+                                                preventing summer learning loss, improving reading proficiency and
+                                                entertainment through the magic that only reading provides.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </main>
@@ -101,8 +233,12 @@
                 <div class="container mx-auto py-6 flex items-center">
                     <div class="w-1/2 text-white text-bold">P.O. Box 171763 ❖ Kansas City, KS 66117</div>
                     <div class="w-1/2 flex justify-end">
-                        <input class="inline-block shadow-md w-2/3 appearance-none outline-none rounded-sm py-2 pl-2" type="text" placeholder="Email Address">
-                        <button class="rounded shadow-md bg-grey-dark hover:bg-grey-darker ml-2 py-2 px-4 text-white text-bold">Submit</button>
+                        <input class="inline-block shadow-md w-2/3 appearance-none outline-none rounded-sm py-2 pl-2"
+                               type="text"
+                               placeholder="Email Address">
+                        <button class="rounded shadow-md bg-grey-dark hover:bg-grey-darker ml-2 py-2 px-4 text-white text-bold">
+                            Submit
+                        </button>
                     </div>
                 </div>
             </footer>
