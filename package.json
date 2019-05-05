@@ -1,0 +1,22 @@
+{
+  "name": "cpkc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedavefulton/cpkc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedavefulton/cpkc/issues"
+  },
+  "homepage": "https://github.com/thedavefulton/cpkc#readme",
+  "devDependencies": {
+    "tailwindcss": "^0.7.4"
+  }
+}
